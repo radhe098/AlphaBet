@@ -7,12 +7,14 @@ import Test from "@/components/test1";
 export default function Home() {
   return (
    <>
-{/* <Sample/>
-<Scroll/> */}
-{/* <Navbar/> */}
-{/* <Homecomponent/> */}
-<Test/>
+{/* <Sample/> */}
+{/* <Scroll/> */}
+<Navbar/>
+{/* 👇Homepage */}
+ <Test />   
 
+
+ 
 
    </>
   );

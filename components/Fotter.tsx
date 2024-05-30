@@ -1,7 +1,7 @@
 import { FaInstagram, FaFacebook, FaYoutube, FaWhatsapp } from "react-icons/fa";
 
-export default function(){
-return(
+function Footer() {
+  return (
     <>
     <div className="footer flex flex-col justify-between pt-4 h-[48vh] w-auto bg-gray-800 bg-opacity-40">
       <div className="toper flex flex-row flex-wrap justify-around gap-4">
@@ -28,10 +28,10 @@ return(
         </div>
         <div className="faqs w-auto text-white  text-left flex flex-col gap-2 ">
           <h1 className="">FaQs</h1>
-          <h3 className="text-lg" >Is there any refund policy ?</h3>
-          <h3 className="text-lg" >Will I get any accesseries ?</h3>
-          <h3 className="text-lg" >what if i don't found any results ?</h3>
-          <h3 className="text-lg" >Can I bring my dog with me?</h3>
+          <h3 className="text-lg" >Is there any refund policy </h3>
+          <h3 className="text-lg" >Will I get any accesseries </h3>
+          <h3 className="text-lg" >what if i dont found any results </h3>
+          <h3 className="text-lg" >Can I bring my dog with me</h3>
         </div>
       </div>
       <div className="bottom text-center">
@@ -41,3 +41,6 @@ return(
   </>
   );
 }
+Footer.displayName = 'Footer';
+
+export default Footer;

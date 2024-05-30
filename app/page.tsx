@@ -4,6 +4,7 @@ import Sample from "@/components/sample";
 import Scroll from "@/components/scrollandother";
 import Homecomponent from "@/components/Home";
 import Test from "@/components/test1";
+import Footer from "@/components/Fotter";
 export default function Home() {
   return (
    <>
@@ -12,6 +13,7 @@ export default function Home() {
 <Navbar/>
 {/* 👇Homepage */}
  <Test />   
+ <Footer/>
 
 
  

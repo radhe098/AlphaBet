@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,3 +10,10 @@ body{
     background:url("https://preview.redd.it/some-mixed-wallpapers-pt-2-v0-fngoj5llb91b1.jpg?width=1082&format=pjpg&auto=webp&s=6de46b79ff9c5352a85c2181f07b65021601eb53");
     opacity:40;
 }
+
+.charmonman-regular {
+    font-family: "Charmonman", cursive;
+    font-weight: 700;
+    font-size: 5rem;
+    font-style: normal;
+  }

@@ -46,20 +46,22 @@ export default function Bett() {
 
                     <motion.div
                       
-                        className="bg-white bg-opacity-25 min-h-[200px] w-[550px] p-4 rounded-lg    "
+                        className="bg-white bg-opacity-25 min-h-[200px] w-[550px] rounded-lg    "
                         initial="hidden"
                         animate="visible"
                         variants={containerVariants}
                     >
-                        <div className="flex flex-col justify-around h-full space-y-4 items-center p-3 w-full">
-                            <motion.h1 variants={itemVariants}>Create A New Bet</motion.h1>
-                            <motion.div className=" space-y-4 w-full" variants={itemVariants}>
-                                <input
-                                    type="text"
-                                    value={title}
-                                    onChange={getTitke}
-                                    className="w-full h-4"
-                                />
+                        <div className="w-full h-16  bg-sky-200 hover:bg-sky-300 "> <h1 className=
+                        ' font-mono uppercase text-black text-2xl  p-4 '>Step 1</h1>
+                        </div>
+                        <div className="flex flex-col justify-around h-[32rem] bg-rose-600 space-y-2 items-center p-3 w-full">
+                            <motion.h1 variants={itemVariants}> <h1 className="text-2xl font-mono ">Titile / Subject For Your Contract</h1> </motion.h1>
+                            <motion.div className="  w-full bg-white bg-opacity-20 " variants={itemVariants}>
+                              
+                                <textarea
+                                    className="w-full h-36 text-black text-lg p-3" 
+                                    placeholder="here" 
+                                    > </textarea>
                             </motion.div>
                             <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem culpa dolore facilis aperiam non laborum commodi, sed porro saepe atque consequatur ipsum aliquam eos! Nihil dolorum earum voluptatem totam reprehenderit?</div>
                         </div>
@@ -67,66 +69,48 @@ export default function Bett() {
             
                     <motion.div
                       
-                        className="bg-white bg-opacity-25 min-h-[200px] w-[550px] p-4 rounded-lg flex justify-between items-center"
-                        initial="hidden"
-                        animate="visible"
-                        variants={containerVariants}
-                    >
-                        <div className="flex flex-col justify-around h-full space-y-4 items-center p-3 w-full">
-                            <motion.h1 variants={itemVariants}>Create A New Bet</motion.h1>
-                            <motion.div className=" space-y-4 w-full" variants={itemVariants}>
-                                <input
-                                    type="text"
-                                    value={title}
-                                    onChange={getTitke}
-                                    className="w-full h-4"
-                                />
-                            </motion.div>
-                            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem culpa dolore facilis aperiam non laborum commodi, sed porro saepe atque consequatur ipsum aliquam eos! Nihil dolorum earum voluptatem totam reprehenderit?</div>
-                        </div>
-                    </motion.div>
-            
-                    <motion.div
+                      className="bg-white bg-opacity-25 min-h-[200px] w-[550px] rounded-lg    "
+                      initial="hidden"
+                      animate="visible"
+                      variants={containerVariants}
+                  >
+                      <div className="w-full h-16  bg-sky-200 hover:bg-sky-300 "> <h1 className=
+                      ' font-mono uppercase text-black text-2xl  p-4 '>Step 2</h1>
+                      </div>
+                      <div className="flex flex-col justify-around h-[32rem] bg-rose-600 space-y-2 items-center p-3 w-full">
+                          <motion.h1 variants={itemVariants}> <h1 className="text-2xl font-mono ">Titile / Subject For Your Contract</h1> </motion.h1>
+                          <motion.div className="  w-full bg-white bg-opacity-20 " variants={itemVariants}>
+                            
+                              <textarea
+                                  className="w-full h-36 text-black text-lg p-3" 
+                                  placeholder="here" 
+                                  > </textarea>
+                          </motion.div>
+                          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem culpa dolore facilis aperiam non laborum commodi, sed porro saepe atque consequatur ipsum aliquam eos! Nihil dolorum earum voluptatem totam reprehenderit?</div>
+                      </div>
+                  </motion.div> <motion.div
                       
-                        className="bg-white bg-opacity-25 min-h-[200px] w-[550px] p-4 rounded-lg flex justify-between items-center"
-                        initial="hidden"
-                        animate="visible"
-                        variants={containerVariants}
-                    >
-                        <div className="flex flex-col justify-around h-full space-y-4 items-center p-3 w-full">
-                            <motion.h1 variants={itemVariants}>Create A New Bet</motion.h1>
-                            <motion.div className=" space-y-4 w-full" variants={itemVariants}>
-                                <input
-                                    type="text"
-                                    value={title}
-                                    onChange={getTitke}
-                                    className="w-full h-4"
-                                />
-                            </motion.div>
-                            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem culpa dolore facilis aperiam non laborum commodi, sed porro saepe atque consequatur ipsum aliquam eos! Nihil dolorum earum voluptatem totam reprehenderit?</div>
-                        </div>
-                    </motion.div>
-            
-                    <motion.div
-                      
-                        className="bg-white bg-opacity-25 min-h-[200px] w-[550px] p-4 rounded-lg flex justify-between items-center"
-                        initial="hidden"
-                        animate="visible"
-                        variants={containerVariants}
-                    >
-                        <div className="flex flex-col justify-around h-full space-y-4 items-center p-3 w-full">
-                            <motion.h1 variants={itemVariants}>Create A New Bet</motion.h1>
-                            <motion.div className=" space-y-4 w-full" variants={itemVariants}>
-                                <input
-                                    type="text"
-                                    value={title}
-                                    onChange={getTitke}
-                                    className="w-full h-4"
-                                />
-                            </motion.div>
-                            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem culpa dolore facilis aperiam non laborum commodi, sed porro saepe atque consequatur ipsum aliquam eos! Nihil dolorum earum voluptatem totam reprehenderit?</div>
-                        </div>
-                    </motion.div>
+                      className="bg-white bg-opacity-25 min-h-[200px] w-[550px] rounded-lg    "
+                      initial="hidden"
+                      animate="visible"
+                      variants={containerVariants}
+                  >
+                      <div className="w-full h-16  bg-sky-200 hover:bg-sky-300 "> <h1 className=
+                      ' font-mono uppercase text-black text-2xl  p-4 '>Step 3</h1>
+                      </div>
+                      <div className="flex flex-col justify-around h-[32rem] bg-rose-600 space-y-2 items-center p-3 w-full">
+                          <motion.h1 variants={itemVariants}> <h1 className="text-2xl font-mono ">Titile / Subject For Your Contract</h1> </motion.h1>
+                          <motion.div className="  w-full bg-white bg-opacity-20 " variants={itemVariants}>
+                            
+                              <textarea
+                                  className="w-full h-36 text-black text-lg p-3" 
+                                  placeholder="here" 
+                                  > </textarea>
+                          </motion.div>
+                          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem culpa dolore facilis aperiam non laborum commodi, sed porro saepe atque consequatur ipsum aliquam eos! Nihil dolorum earum voluptatem totam reprehenderit?</div>
+                      </div>
+                  </motion.div>           
+                    
             
             </div>
             <div></div>

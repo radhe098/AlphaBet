@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useScroll, motion, useTransform } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import "../components/style.css";
+// import Image from 'next/image'; 
+import patternbg from '@/public/classic-retro-floral-pattern-s0kl3bgo3n96kl15.jpg';
 
 export default function App() {
     const { scrollY, scrollX } = useScroll();
@@ -29,30 +31,31 @@ export default function App() {
     return (
         <>
             <motion.div 
+            style={{ backgroundImage: `url(${patternbg.src})` }}
                 ref={refConnectWallet}
                 initial={{ opacity: 0 }}
                 animate={inViewConnectWallet ? 'visible' : 'hidden'}
                 exit={{ opacity: 0 }}
                 variants={variants}
                 transition={{ duration: 2, scale: { type: "spring", damping: 30, stiffness: 100, restDelta: 0.001 } }}
-                className='container bg-gradient-to-b from-cyan-50 to-cyan-200 w-full h-[36rem] flex justify-center items-center mt-12 m-auto bg-opacity-65'
+                className=' bg-gradient-to-b from-cyan-50 to-cyan-200 w-auto h-[36rem] flex justify-center items-center mt-12 m-auto bg-opacity-65'
             >
-                <div className="bg-white flex h-24 justify-center rounded-lg p-4">
+                <div className="bg-white flex  justify-center rounded-xl p-8" >
                     <button className='text-center text-6xl text-black'>Connect Wallet</button>
                 </div>    
             </motion.div>
 
-            <div className='mt-32'>
-                <motion.div className="box bg-yellow-100" style={{ y: yTransform1, x: 0, display: "flex", justifyContent: "center", overflow: "hidden" }}>
-                    <h1 className='text-center text-6xl m-auto text-black'>Create</h1>
+            <div className='charmonman-regular mt-32'>
+                <motion.div className="box bg-white" style={{ y: yTransform1, x: 0, display: "flex", justifyContent: "center", overflow: "hidden" }}>
+                    <h1 className='text-center  m-auto text-black'>Create</h1>
                 </motion.div>
                 
-                <motion.div className="box flex justify-center bg-yellow-100" transition={{ duration: 2 }} style={{ y: yTransform2, x: 0 }}>
-                    <h1 className='text-center text-6xl m-auto text-black'>Sign</h1>
+                <motion.div className="box flex justify-center bg-white" transition={{ duration: 2 }} style={{ y: yTransform2, x: 0 }}>
+                    <h1 className='text-center  m-auto text-black'>Sign</h1>
                 </motion.div>
 
-                <motion.div className="box flex bg-yellow-100 justify-center" transition={{ duration: 2 }} style={{ y: yTransform3, x: 0 }}>
-                    <h1 className="text-center text-6xl m-auto text-black">Own</h1>
+                <motion.div className="box flex bg-white justify-center" transition={{ duration: 2 }} style={{ y: yTransform3, x: 0 }}>
+                    <h1 className="text-center  m-auto text-black">Own</h1>
                 </motion.div>
             </div>
 

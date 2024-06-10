@@ -4,7 +4,6 @@ import { useScroll, motion, useTransform } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import "../components/style.css";
 // import Image from 'next/image'; 
-import patternbg from '@/public/classic-retro-floral-pattern-s0kl3bgo3n96kl15.jpg';
 
 export default function App() {
     const { scrollY, scrollX } = useScroll();
@@ -15,7 +14,7 @@ export default function App() {
 
     const [refConnectWallet, inViewConnectWallet] = useInView({
         threshold: 0.6,
-        triggerOnce: false // This will make the "Connect Wallet" button trigger animation every time it comes into view
+        triggerOnce: false 
     });
 
     const [refOthers, inViewOthers] = useInView({
@@ -31,17 +30,18 @@ export default function App() {
     return (
         <>
             <motion.div 
-            style={{ backgroundImage: `url(${patternbg.src})` }}
+            // style={{ backgroundImage: `url(${patternbg.src})` }}
                 ref={refConnectWallet}
                 initial={{ opacity: 0 }}
                 animate={inViewConnectWallet ? 'visible' : 'hidden'}
                 exit={{ opacity: 0 }}
                 variants={variants}
                 transition={{ duration: 2, scale: { type: "spring", damping: 30, stiffness: 100, restDelta: 0.001 } }}
-                className=' bg-gradient-to-b from-cyan-50 to-cyan-200 w-auto h-[36rem] flex justify-center items-center mt-12 m-auto bg-opacity-65'
+                className='
+                  w-auto h-[36rem] flex justify-center items-center mt-12 m-auto bg-opacity-65'
             >
-                <div className="bg-white flex  justify-center rounded-xl p-8" >
-                    <button className='text-center text-6xl text-black'>Connect Wallet</button>
+                <div className="bg-white flex  justify-center rounded-xl p-2" >
+                    <button className='text-center text-4xl text-black'>Connect Wallet</button>
                 </div>    
             </motion.div>
 
